@@ -50,13 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-       // DbHandler dbHandler = new DbHandler(this);
 
-        //dbHandler.addPeople("Uvindu", "256458");
-       // ArrayList<ModelPeople> data = dbHandler.fetchPeople();
-
-       // for(int i =0; i< data.size();i++)
-         //   Log.d("People Info", "Name"+ data.get(i).Name + "Phone_No" + data.get(i).Phone_No);
 
     }
 }

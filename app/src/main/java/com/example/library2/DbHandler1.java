@@ -76,15 +76,15 @@ public class DbHandler1 extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do {
-                // Create new ToDo object
+
                 BookModel bookModel = new BookModel();
-                // mmgby6hh
+
                 bookModel.setId(cursor.getInt(0));
                 bookModel.setName(cursor.getString(1));
                 bookModel.setAuthor(cursor.getString(2));
 
 
-                //toDos [obj,objs,asas,asa]
+
                 bookModels.add(bookModel);
             }while (cursor.moveToNext());
         }

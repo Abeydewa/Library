@@ -34,16 +34,14 @@ public class BookAdapter extends ArrayAdapter<BookModel> {
 
         TextView name = row.findViewById(R.id.name);
         TextView author = row.findViewById(R.id.author);
-        //ImageView imageView = row.findViewById(R.id.onGoing);
+
 
         BookModel bookModel = bookModels.get(position);
         name.setText(bookModel.getName());
         author.setText(bookModel.getAuthor());
-        //imageView.setVisibility(row.INVISIBLE);
 
-        // if(toDo.getFinished() > 0){
-        //  imageView.setVisibility(View.VISIBLE);
-        // }
+
+
         return row;
     }
 }

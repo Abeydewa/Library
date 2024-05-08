@@ -34,16 +34,12 @@ public class PeopleAdapter extends ArrayAdapter<PeopleModel> {
 
         TextView name = row.findViewById(R.id.name);
         TextView phone = row.findViewById(R.id.phone);
-        //ImageView imageView = row.findViewById(R.id.onGoing);
+
 
         PeopleModel peopleModel = peopleModels.get(position);
         name.setText(peopleModel.getName());
         phone.setText(peopleModel.getPhone());
-        //imageView.setVisibility(row.INVISIBLE);
 
-       // if(toDo.getFinished() > 0){
-          //  imageView.setVisibility(View.VISIBLE);
-       // }
         return row;
     }
 }

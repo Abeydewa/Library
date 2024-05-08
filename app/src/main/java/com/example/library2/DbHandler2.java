@@ -82,9 +82,9 @@ public class DbHandler2 extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do {
-                // Create new ToDo object
+
                 LendModel lendModel = new LendModel();
-                // mmgby6hh
+
                 lendModel.setId(cursor.getInt(0));
                 lendModel.setMember(cursor.getString(1));
                 lendModel.setBook(cursor.getString(2));
@@ -92,7 +92,7 @@ public class DbHandler2 extends SQLiteOpenHelper {
                 lendModel.setFinished(cursor.getLong(4));
 
 
-                //toDos [obj,objs,asas,asa]
+
                 lendModels.add(lendModel);
             }while (cursor.moveToNext());
         }
