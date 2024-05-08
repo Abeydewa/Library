@@ -1,0 +1,1 @@
+This is a android application which is created for manage a library. Here you can add/deleted and update library members and books details. You can add books lending details as welle. after a book is returened there will be a tick infront of the book borrowers name.
